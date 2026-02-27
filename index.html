@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iwajowa Rural Farmers Association</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;700&family=Cinzel:wght@600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+  <div class="preloader-inner">
+    <img src="logo.jpeg" alt="Logo" class="preloader-logo"/>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    <p>Loading...</p>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="logo.jpeg" alt="IRFA Logo" class="logo-img"/>
+      <div class="logo-text">
+        <span class="logo-main">IRFA</span>
+        <span class="logo-sub">Iwajowa Rural Farmers Association</span>
+      </div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#commodities">Commodities</a></li>
+      <li><a href="#objectives">Objectives</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact" class="nav-cta">Join Us</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-geo"></div>
+  <div class="hero-content">
+    <div class="hero-badge" data-aos="zoom-in" data-aos-duration="900">
+      <img src="logo.jpeg" alt="IRFA Logo" class="hero-logo"/>
+      <div class="hero-badge-ring r1"></div>
+      <div class="hero-badge-ring r2"></div>
+    </div>
+    <p class="hero-tagline" data-aos="fade-up" data-aos-delay="300">
+      <span class="tline"></span> Motto: <em>Trust &amp; Integrity</em> <span class="tline"></span>
+    </p>
+    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="500">
+      Iwajowa Rural<br/><span class="gold-text">Farmers Association</span>
+    </h1>
+    <p class="hero-desc" data-aos="fade-up" data-aos-delay="700">
+      Empowering Nigerian rural farmers through sustainable agriculture, collective action, and shared economic resilience.
+    </p>
+    <div class="hero-btns" data-aos="fade-up" data-aos-delay="900">
+      <a href="#about" class="btn btn-gold"><i class="fas fa-seedling"></i> Discover More</a>
+      <a href="#commodities" class="btn btn-glass"><i class="fas fa-store"></i> Our 38 Commodities</a>
+    </div>
+    <div class="hero-pills" data-aos="fade-up" data-aos-delay="1100">
+      <span>🌾 19 Crop Products</span>
+      <span>🐄 19 Livestock Products</span>
+      <span>🐟 Fisheries</span>
+      <span>🚜 Agri-Tech</span>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<section class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+      <i class="fas fa-users stat-icon"></i>
+      <div class="stat-nums"><span class="stat-num" data-target="500">0</span><span class="stat-sym">+</span></div>
+      <p>Active Members</p>
+    </div>
+    <div class="stat-sep"></div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+      <i class="fas fa-store stat-icon"></i>
+      <div class="stat-nums"><span class="stat-num" data-target="38">0</span></div>
+      <p>Commodities</p>
+    </div>
+    <div class="stat-sep"></div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-map-marker-alt stat-icon"></i>
+      <div class="stat-nums"><span class="stat-num" data-target="8">0</span><span class="stat-sym">+</span></div>
+      <p>Communities Reached</p>
+    </div>
+    <div class="stat-sep"></div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+      <i class="fas fa-star stat-icon"></i>
+      <div class="stat-nums"><span class="stat-num" data-target="95">0</span><span class="stat-sym">%</span></div>
+      <p>Member Satisfaction</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+  <div class="about-deco"></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">Who We Are</span>
+      <h2>About <span class="gold-text">IRFA</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text" data-aos="fade-right" data-aos-duration="900">
+        <p class="about-lead">The <strong>Iwajowa Rural Farmers Association (IRFA)</strong> is a grassroots agricultural organization transforming the lives of rural farmers across Nigeria.</p>
+        <p>Founded on <strong>Trust and Integrity</strong>, IRFA unites crop farmers, livestock keepers, fish farmers, and agribusiness entrepreneurs under one powerful mission — building a prosperous, self-sustaining farming community.</p>
+        <p>Through our pioneering <strong>Farm Settlement System</strong>, we address the total welfare of farmers and their families, from schooling for children to healthcare outreach and emergency support.</p>
+        <div class="about-tags" data-aos="fade-up" data-aos-delay="200">
+          <span class="tag">🌿 Crop Farming</span>
+          <span class="tag">🐄 Livestock</span>
+          <span class="tag">🐟 Fisheries</span>
+          <span class="tag">🚜 Agri-Tech</span>
+          <span class="tag">🌾 Rice Production</span>
+          <span class="tag">🍠 Cassava Processing</span>
+        </div>
+      </div>
+      <div class="about-visual" data-aos="fade-left" data-aos-duration="900">
+        <div class="about-mosaic">
+          <div class="mosaic-cell mc1" data-aos="zoom-in" data-aos-delay="100">
+            <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=500&q=80&auto=format&fit=crop" alt="Crop Farming" loading="lazy"/>
+            <div class="mosaic-label">🌿 Crop Farming</div>
+          </div>
+          <div class="mosaic-cell mc2" data-aos="zoom-in" data-aos-delay="200">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=500&q=80&auto=format&fit=crop" alt="Livestock" loading="lazy"/>
+            <div class="mosaic-label">🐄 Livestock</div>
+          </div>
+          <div class="mosaic-cell mc3" data-aos="zoom-in" data-aos-delay="300">
+            <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=500&q=80&auto=format&fit=crop" alt="Agri-Tech" loading="lazy"/>
+            <div class="mosaic-label">🚜 Agri-Tech</div>
+          </div>
+          <div class="mosaic-cell mc4" data-aos="zoom-in" data-aos-delay="400">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&q=80&auto=format&fit=crop" alt="Fisheries" loading="lazy"/>
+            <div class="mosaic-label">🐟 Fisheries</div>
+          </div>
+          <div class="mosaic-center"><img src="logo.jpeg" alt="IRFA Logo"/></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION & MISSION -->
+<section class="mission section" id="mission">
+  <div class="mission-bg-pattern"></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label light-label">Our Foundation</span>
+      <h2 class="white-h2">Vision &amp; <span class="gold-text">Mission</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="vm-grid">
+      <div class="vm-card" data-aos="flip-left" data-aos-duration="1000">
+        <div class="vm-icon"><i class="fas fa-eye"></i></div>
+        <h3>Vision</h3>
+        <p>To become a leading rural farmers' association that empowers members with sustainable agricultural practices, economic resilience, and improved livelihoods for a prosperous farming community.</p>
+      </div>
+      <div class="vm-card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="150">
+        <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
+        <h3>Mission</h3>
+        <p>To promote agricultural productivity, market access, and rural development through capacity building, collective action, advocacy, and sustainable farming practices for the benefit of all members.</p>
+      </div>
+    </div>
+    <div class="goals-section">
+      <h3 class="sub-heading" data-aos="fade-up">Our <span class="gold-text">Goals</span></h3>
+      <div class="goals-grid">
+        <div class="goal-item" data-aos="fade-right" data-aos-delay="0"><div class="goal-num">01</div><p>Increase agricultural productivity and income of members</p></div>
+        <div class="goal-item" data-aos="fade-left"  data-aos-delay="60"><div class="goal-num">02</div><p>Promote sustainable and climate-smart farming</p></div>
+        <div class="goal-item" data-aos="fade-right" data-aos-delay="120"><div class="goal-num">03</div><p>Enhance access to agricultural inputs, finance, and markets</p></div>
+        <div class="goal-item" data-aos="fade-left"  data-aos-delay="180"><div class="goal-num">04</div><p>Build members' capacity through training and knowledge sharing</p></div>
+        <div class="goal-item" data-aos="fade-right" data-aos-delay="240"><div class="goal-num">05</div><p>Advocate for policies and infrastructure that support rural farmers</p></div>
+        <div class="goal-item" data-aos="fade-left"  data-aos-delay="300"><div class="goal-num">06</div><p>Employ the Farm Settlement System for the total welfare of rural farmers and their families</p></div>
+      </div>
+    </div>
+    <div class="aims-section" data-aos="zoom-in" data-aos-duration="800">
+      <div class="aims-card">
+        <i class="fas fa-seedling aims-icon"></i>
+        <div>
+          <h4>Our Aims</h4>
+          <p>To train and empower Nigerian rural farmers through sustainable best agricultural practices, improved productivity, collective marketing, and socio-economic development for better livelihoods.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     COMMODITIES
+============================================================ -->
+<section class="commodities section" id="commodities">
+  <div class="commodities-bg"></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">What We Produce</span>
+      <h2>Our <span class="gold-text">38 Commodities</span></h2>
+      <div class="divider"></div>
+      <p class="section-desc" data-aos="fade-up" data-aos-delay="100">From livestock to crop farming, IRFA members cultivate a thriving portfolio of agricultural products that feed communities and power Nigeria's rural economy.</p>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="commodity-tabs" data-aos="fade-up" data-aos-delay="150">
+      <button class="ctab active" data-filter="all"><i class="fas fa-th"></i> All 38</button>
+      <button class="ctab" data-filter="livestock"><i class="fas fa-cow"></i> Livestock &nbsp;<em>19</em></button>
+      <button class="ctab" data-filter="crop"><i class="fas fa-seedling"></i> Crop Farming &nbsp;<em>19</em></button>
+    </div>
+
+    <!-- ── LIVESTOCK ── -->
+    <div class="cat-header livestock-header" data-aos="fade-right" data-commodity-cat="livestock">
+      <div class="cat-icon"><i class="fas fa-cow"></i></div>
+      <div class="cat-text"><h3>Livestock Businesses</h3><p>19 animal husbandry and livestock production enterprises</p></div>
+      <div class="cat-badge">19 Products</div>
+    </div>
+
+    <div class="commodity-grid" id="livestockGrid">
+      <!-- 1 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="0">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=420&q=75&auto=format&fit=crop" alt="Poultry" loading="lazy"/><span class="c-num">01</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-drumstick-bite"></i><h4>Poultry Farming</h4></div>
+      </div>
+      <!-- 2 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="40">
+        <div class="c-img"><img src="https://plus.unsplash.com/premium_photo-1663040089947-145a84e26a9b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0ZmlzaCUyMGZhcm1pbmd8ZW58MHx8MHx8fDA%3D" alt="Catfish" loading="lazy"/><span class="c-num">02</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-fish"></i><h4>Catfish Farming</h4></div>
+      </div>
+      <!-- 3 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="80">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=420&q=75&auto=format&fit=crop" alt="Tilapia" loading="lazy"/><span class="c-num">03</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-fish"></i><h4>Tilapia Farming</h4></div>
+      </div>
+      <!-- 4 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="120">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1524024973431-2ad916746881?w=420&q=75&auto=format&fit=crop" alt="Goat" loading="lazy"/><span class="c-num">04</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-horse-head"></i><h4>Goat Rearing</h4></div>
+      </div>
+      <!-- 5 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="160">
+        <div class="c-img"><img src="https://plus.unsplash.com/premium_photo-1667099522632-1341eebb94a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2hlZXAlMjBmYXJtaW5nfGVufDB8fDB8fHww" alt="Sheep" loading="lazy"/><span class="c-num">05</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-paw"></i><h4>Sheep Farming</h4></div>
+      </div>
+      <!-- 6 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="200">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=420&q=75&auto=format&fit=crop" alt="Cattle" loading="lazy"/><span class="c-num">06</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-cow"></i><h4>Cattle Rearing</h4></div>
+      </div>
+      <!-- 7 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="240">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=420&q=75&auto=format&fit=crop" alt="Dairy" loading="lazy"/><span class="c-num">07</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-cheese"></i><h4>Dairy Farming</h4></div>
+      </div>
+      <!-- 8 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="280">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?w=420&q=75&auto=format&fit=crop" alt="Pig" loading="lazy"/><span class="c-num">08</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-piggy-bank"></i><h4>Pig Farming</h4></div>
+      </div>
+      <!-- 9 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="320">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1551710029-27e4ef866ec6?w=420&q=75&auto=format&fit=crop" alt="Snail" loading="lazy"/><span class="c-num">09</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-circle"></i><h4>Snail Farming</h4></div>
+      </div>
+      <!-- 10 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="360">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=420&q=75&auto=format&fit=crop" alt="Grasscutter" loading="lazy"/><span class="c-num">10</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-paw"></i><h4>Grasscutter Farming</h4></div>
+      </div>
+      <!-- 11 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="400">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=420&q=75&auto=format&fit=crop" alt="Rabbit" loading="lazy"/><span class="c-num">11</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-paw"></i><h4>Rabbit Farming</h4></div>
+      </div>
+      <!-- 12 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="440">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=420&q=75&auto=format&fit=crop" alt="Bees" loading="lazy"/><span class="c-num">12</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-star"></i><h4>Bee Keeping</h4></div>
+      </div>
+      <!-- 13 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="480">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=420&q=75&auto=format&fit=crop&sat=-30" alt="Turkey" loading="lazy"/><span class="c-num">13</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-drumstick-bite"></i><h4>Turkey Farming</h4></div>
+      </div>
+      <!-- 14 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="520">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?w=420&q=75&auto=format&fit=crop" alt="Duck" loading="lazy"/><span class="c-num">14</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-feather"></i><h4>Duck Farming</h4></div>
+      </div>
+      <!-- 15 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="560">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1598966739654-5e9a252d8c72?w=420&q=75&auto=format&fit=crop" alt="Quail" loading="lazy"/><span class="c-num">15</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-feather-alt"></i><h4>Quail Farming</h4></div>
+      </div>
+      <!-- 16 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="600">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=420&q=75&auto=format&fit=crop&hue=180" alt="Guinea Fowl" loading="lazy"/><span class="c-num">16</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-dove"></i><h4>Guinea Fowl Farming</h4></div>
+      </div>
+      <!-- 17 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="640">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1520637836862-4d197d17c5a4?w=420&q=75&auto=format&fit=crop" alt="Crab" loading="lazy"/><span class="c-num">17</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-fish"></i><h4>Hermit Crab</h4></div>
+      </div>
+      <!-- 18 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="680">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?w=420&q=75&auto=format&fit=crop" alt="Feed" loading="lazy"/><span class="c-num">18</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-industry"></i><h4>Livestock Feed Production</h4></div>
+      </div>
+      <!-- 19 -->
+      <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="720">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=420&q=75&auto=format&fit=crop&sat=40" alt="Breeding" loading="lazy"/><span class="c-num">19</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-body"><i class="fas fa-dna"></i><h4>Animal Breeding &amp; Genetics</h4></div>
+      </div>
+    </div>
+
+    <!-- ── CROP FARMING ── -->
+    <div class="cat-header crop-header" data-aos="fade-right" data-aos-delay="100" data-commodity-cat="crop">
+      <div class="cat-icon crop-ci"><i class="fas fa-seedling"></i></div>
+      <div class="cat-text"><h3>Crop Farming</h3><p>19 crop cultivation and agro-processing enterprises</p></div>
+      <div class="cat-badge crop-cbadge">19 Products</div>
+    </div>
+
+    <div class="commodity-grid" id="cropGrid">
+      <!-- 20 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="0">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=420&q=75&auto=format&fit=crop" alt="Cassava" loading="lazy"/><span class="c-num">20</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-leaf"></i><h4>Cassava Farming</h4></div>
+      </div>
+      <!-- 21 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="40">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=420&q=75&auto=format&fit=crop" alt="Maize" loading="lazy"/><span class="c-num">21</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-seedling"></i><h4>Maize Farming</h4></div>
+      </div>
+      <!-- 22 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="80">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=420&q=75&auto=format&fit=crop" alt="Rice" loading="lazy"/><span class="c-num">22</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-seedling"></i><h4>Rice Farming</h4></div>
+      </div>
+      <!-- 23 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="120">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=420&q=75&auto=format&fit=crop" alt="Yam" loading="lazy"/><span class="c-num">23</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-leaf"></i><h4>Yam Farming</h4></div>
+      </div>
+      <!-- 24 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="160">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=420&q=75&auto=format&fit=crop" alt="Plantain" loading="lazy"/><span class="c-num">24</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-tree"></i><h4>Plantain &amp; Banana</h4></div>
+      </div>
+      <!-- 25 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="200">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=420&q=75&auto=format&fit=crop" alt="Cocoa" loading="lazy"/><span class="c-num">25</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-leaf"></i><h4>Cocoa Farming</h4></div>
+      </div>
+      <!-- 26 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="240">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=420&q=75&auto=format&fit=crop" alt="Oil Palm" loading="lazy"/><span class="c-num">26</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-tree"></i><h4>Oil Palm Plantation</h4></div>
+      </div>
+      <!-- 27 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="280">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1567306295427-94503f8300d7?w=420&q=75&auto=format&fit=crop" alt="Groundnut" loading="lazy"/><span class="c-num">27</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-seedling"></i><h4>Groundnut Farming</h4></div>
+      </div>
+      <!-- 28 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="320">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=420&q=75&auto=format&fit=crop" alt="Soybean" loading="lazy"/><span class="c-num">28</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-seedling"></i><h4>Soybean Farming</h4></div>
+      </div>
+      <!-- 29 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="360">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=420&q=75&auto=format&fit=crop" alt="Tomato" loading="lazy"/><span class="c-num">29</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-apple-alt"></i><h4>Tomato Farming</h4></div>
+      </div>
+      <!-- 30 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="400">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=420&q=75&auto=format&fit=crop" alt="Pepper" loading="lazy"/><span class="c-num">30</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-pepper-hot"></i><h4>Pepper Farming</h4></div>
+      </div>
+      <!-- 31 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="440">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1587015990127-424b954571b4?w=420&q=75&auto=format&fit=crop" alt="Onion" loading="lazy"/><span class="c-num">31</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-circle"></i><h4>Onion Farming</h4></div>
+      </div>
+      <!-- 32 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="480">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=420&q=75&auto=format&fit=crop" alt="Okra" loading="lazy"/><span class="c-num">32</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-leaf"></i><h4>Okra Farming</h4></div>
+      </div>
+      <!-- 33 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="520">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=420&q=75&auto=format&fit=crop" alt="Pineapple" loading="lazy"/><span class="c-num">33</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-apple-alt"></i><h4>Pineapple Farming</h4></div>
+      </div>
+      <!-- 34 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="560">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1526424382096-74a93e105682?w=420&q=75&auto=format&fit=crop" alt="Pawpaw" loading="lazy"/><span class="c-num">34</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-apple-alt"></i><h4>Pawpaw Farming</h4></div>
+      </div>
+      <!-- 35 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="600">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1553279768-865429fa0078?w=420&q=75&auto=format&fit=crop" alt="Mango" loading="lazy"/><span class="c-num">35</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-apple-alt"></i><h4>Mango Farming</h4></div>
+      </div>
+      <!-- 36 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="640">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=420&q=75&auto=format&fit=crop&hue=80" alt="Cashew" loading="lazy"/><span class="c-num">36</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-seedling"></i><h4>Cashew Nut Farming</h4></div>
+      </div>
+      <!-- 37 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="680">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1596097635121-14b63b7a0c19?w=420&q=75&auto=format&fit=crop" alt="Sweet Potato" loading="lazy"/><span class="c-num">37</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-leaf"></i><h4>Sweet Potato Farming</h4></div>
+      </div>
+      <!-- 38 -->
+      <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="720">
+        <div class="c-img"><img src="https://images.unsplash.com/photo-1574316071802-0d684efa7bf5?w=420&q=75&auto=format&fit=crop" alt="Vegetables" loading="lazy"/><span class="c-num">38</span><span class="c-tag ct">Crop</span></div>
+        <div class="c-body crop-b"><i class="fas fa-leaf"></i><h4>Vegetable Farming</h4></div>
+      </div>
+    </div>
+
+    <!-- SUMMARY BANNER -->
+    <div class="commodity-summary" data-aos="zoom-in" data-aos-duration="800">
+      <div class="cs-item"><span class="cs-num">19</span><span class="cs-label">Livestock Products</span></div>
+      <div class="cs-div"></div>
+      <div class="cs-item"><span class="cs-num">19</span><span class="cs-label">Crop Products</span></div>
+      <div class="cs-div"></div>
+      <div class="cs-item cs-total"><span class="cs-num">38</span><span class="cs-label">Total Commodities</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIVES -->
+<section class="objectives section" id="objectives">
+  <div class="obj-deco"></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">What We Do</span>
+      <h2>Our <span class="gold-text">Objectives</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="obj-grid">
+      <div class="obj-card" data-aos="fade-up" data-aos-delay="0"><div class="obj-num">01</div><div class="obj-icon-wrap"><i class="fas fa-chalkboard-teacher"></i></div><h4>Capacity Building</h4><p>Regular training, workshops, and field demonstrations on modern farming techniques, post-harvest handling, and value addition.</p></div>
+      <div class="obj-card" data-aos="fade-up" data-aos-delay="80"><div class="obj-num">02</div><div class="obj-icon-wrap"><i class="fas fa-boxes"></i></div><h4>Access to Inputs</h4><p>Bulk purchase of quality seeds, fertilizers, agrochemicals, and equipment with linkage to veterinary services and experts.</p></div>
+      <div class="obj-card" data-aos="fade-up" data-aos-delay="160"><div class="obj-num">03</div><div class="obj-icon-wrap"><i class="fas fa-store"></i></div><h4>Market Access</h4><p>Collective marketing, cooperative sales, agro-processing of gari, cassava flour, and palm oil. Direct market linkages.</p></div>
+      <div class="obj-card" data-aos="fade-up" data-aos-delay="240"><div class="obj-num">04</div><div class="obj-icon-wrap"><i class="fas fa-leaf"></i></div><h4>Sustainable Agric</h4><p>Climate-smart practices: agroforestry, conservation farming, organic agriculture, soil fertility and water conservation.</p></div>
+      <div class="obj-card" data-aos="fade-up" data-aos-delay="320"><div class="obj-num">05</div><div class="obj-icon-wrap"><i class="fas fa-piggy-bank"></i></div><h4>Financial Inclusion</h4><p>Microcredit, grants, and agricultural insurance. Savings and thrift cooperative activities for economic resilience.</p></div>
+      <div class="obj-card" data-aos="fade-up" data-aos-delay="400"><div class="obj-num">06</div><div class="obj-icon-wrap"><i class="fas fa-users"></i></div><h4>Youth &amp; Women</h4><p>Active participation of women and youth in agribusiness and leadership with support for their enterprises.</p></div>
+      <div class="obj-card" data-aos="fade-up" data-aos-delay="480"><div class="obj-num">07</div><div class="obj-icon-wrap"><i class="fas fa-handshake"></i></div><h4>Partnerships</h4><p>Collaboration with government, NGOs, research institutions, and private sector for technical support and advocacy.</p></div>
+      <div class="obj-card" data-aos="fade-up" data-aos-delay="560"><div class="obj-num">08</div><div class="obj-icon-wrap"><i class="fas fa-heart"></i></div><h4>Social Welfare</h4><p>Welfare support via the Farm Settlement System — schools, emergency assistance, health outreach, and mutual aid.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SETTLEMENT -->
+<section class="settlement section">
+  <div class="container">
+    <div class="settlement-inner">
+      <div class="settlement-text" data-aos="fade-right" data-aos-duration="900">
+        <span class="section-label light-label">Our Flagship Initiative</span>
+        <h2 class="white-h2">The Farm Settlement <span class="gold-text">System</span></h2>
+        <div class="divider" style="margin:20px 0;"></div>
+        <p>Our pioneering Farm Settlement System addresses the complete welfare of rural farmers and their families — from building schools for children to emergency health assistance and housing support.</p>
+        <div class="settlement-features">
+          <div class="sf-item" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-school"></i><span>Children's Education</span></div>
+          <div class="sf-item" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-heartbeat"></i><span>Health Outreach</span></div>
+          <div class="sf-item" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-hands-helping"></i><span>Emergency Aid</span></div>
+          <div class="sf-item" data-aos="fade-up" data-aos-delay="400"><i class="fas fa-home"></i><span>Housing Support</span></div>
+        </div>
+        <a href="#contact" class="btn btn-gold" data-aos="fade-up" data-aos-delay="500">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="settlement-visual" data-aos="fade-left" data-aos-duration="900">
+        <div class="sv-card" data-aos="zoom-in" data-aos-delay="100"><i class="fas fa-school"></i><h5>Education for All</h5><p>Building schools within farm settlements so farmers' children receive quality education without leaving the community.</p></div>
+        <div class="sv-card" data-aos="zoom-in" data-aos-delay="250"><i class="fas fa-heartbeat"></i><h5>Health &amp; Wellness</h5><p>Regular outreach programs providing medical screenings, vaccinations, and wellness education to farming families.</p></div>
+        <div class="sv-card sv-featured" data-aos="zoom-in" data-aos-delay="400"><i class="fas fa-home"></i><h5>Community Living</h5><p>Integrated settlements where families live, work, and thrive together in organized agricultural villages.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team section" id="team">
+  <div class="team-bg-deco"></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">Leadership</span>
+      <h2>Meet Our <span class="gold-text">Team</span></h2>
+      <div class="divider"></div>
+      <p class="section-desc" data-aos="fade-up" data-aos-delay="100">Dedicated leaders driving the IRFA mission forward with passion and commitment to our farming communities.</p>
+    </div>
+
+    <!-- HOW TO ADD PHOTOS — comment for site editor -->
+    <!-- 
+      TO ADD TEAM PHOTOS:
+      Place photos in the /team-photos/ folder using exact filenames listed in README.txt
+      The page will automatically show the photo instead of the initials avatar.
+      Supported: .jpg .jpeg .png .webp — Recommended size: 400x400px square
+    -->
+
+    <div class="team-grid" id="teamGrid">
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="team-photo-wrap">
+          <div class="team-photo tp-a" id="photo-01">
+            <img src="team-photos/awo.jpeg" alt="Mr. Adewale Ogunleye" class="team-photo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.team-initials').style.display='flex'"/>
+            <span class="team-initials">AO</span>
+          </div>
+        </div>
+        <div class="team-info"><h4>Agbeloba Oladele Awoleri </h4><span class="team-position">National President/B.O.T Chairman</span></div>
+      </div>
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="team-photo-wrap">
+          <div class="team-photo tp-b">
+            <img src="team-photos/ruben.jpeg" alt="Mrs. Funmilayo Adesanya" class="team-photo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.team-initials').style.display='flex'"/>
+            <span class="team-initials">FA</span>
+          </div>
+        </div>
+        <div class="team-info"><h4> Reubenson Emmanuel Peace</h4><span class="team-position">Board Member</span></div>
+      </div>
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="team-photo-wrap">
+          <div class="team-photo tp-c">
+            <img src="team-photos/kuye.jpeg" alt="Alhaji Musa Ibrahim" class="team-photo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.team-initials').style.display='flex'"/>
+            <span class="team-initials">MI</span>
+          </div>
+        </div>
+        <div class="team-info"><h4> Kuye Abiodun Dada</h4><span class="team-position">Board Member</span></div>
+      </div>
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="team-photo-wrap">
+          <div class="team-photo tp-d">
+            <img src="team-photos/faleye.jpeg" alt="Mrs. Grace Taiwo" class="team-photo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.team-initials').style.display='flex'"/>
+            <span class="team-initials">GT</span>
+          </div>
+        </div>
+        <div class="team-info"><h4>Prince Faleye Abayomi </h4><span class="team-position">Board Member</span></div>
+      </div>
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="320">
+        <div class="team-photo-wrap">
+          <div class="team-photo tp-e">
+            <img src="team-photos/oki.jpeg" alt="Mr. Biodun Lawal" class="team-photo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.team-initials').style.display='flex'"/>
+            <span class="team-initials">BL</span>
+          </div>
+        </div>
+        <div class="team-info"><h4>Oki Abiodun Adenike </h4><span class="team-position">Board Member</span></div>
+      </div>
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-photo-wrap">
+          <div class="team-photo tp-f">
+            <img src="team-photos/dauda.jpeg" alt="Miss Kemi Adetoye" class="team-photo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.team-initials').style.display='flex'"/>
+            <span class="team-initials">KA</span>
+          </div>
+        </div>
+        <div class="team-info"><h4> Dauda Rashidat Oluwatoyin</h4><span class="team-position">Board Member</span></div>
+      </div>
+
+    </div>
+
+    <!-- EXTRA MEMBERS -->
+    <div class="team-grid team-extra" id="teamExtra">
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="team-photo-wrap">
+          <div class="team-photo tp-g">
+            <img src="team-photos/seun.jpeg" alt="Mr. Oluwaseun Badmus" class="team-photo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.team-initials').style.display='flex'"/>
+            <span class="team-initials">OB</span>
+          </div>
+        </div>
+        <div class="team-info"><h4>Adeoye Oluwatosin Seun </h4><span class="team-position">Board Secretary</span></div>
+      </div>
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="team-photo-wrap">
+          <div class="team-photo tp-h">
+            <img src="team-photos/alhaji.jpeg" alt="Mrs. Abiodun Afolabi" class="team-photo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.team-initials').style.display='flex'"/>
+            <span class="team-initials">AA</span>
+          </div>
+        </div>
+        <div class="team-info"><h4>Alhaji Kamil Okanlawon </h4><span class="team-position">Board Member</span></div>
+      </div>
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="team-photo-wrap">
+          <div class="team-photo tp-i">
+            <img src="team-photos/olori.jpeg" alt="Mr. Ismail Oladele" class="team-photo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.team-initials').style.display='flex'"/>
+            <span class="team-initials">IO</span>
+          </div>
+        </div>
+        <div class="team-info"><h4>Olori Ganiyat Kuye </h4><span class="team-position">Vice President/B.O.T Member</span></div>
+      </div>
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="team-photo-wrap">
+          <div class="team-photo tp-j">
+            <img src="team-photos/bridget.jpeg" alt="Miss Remi Yusuf" class="team-photo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.team-initials').style.display='flex'"/>
+            <span class="team-initials">RY</span>
+          </div>
+        </div>
+        <div class="team-info"><h4>Bridget Okonofua </h4><span class="team-position">B.O.T Treasurer</span></div>
+      </div>
+
+      
+
+    </div>
+
+    <div class="team-cta" data-aos="fade-up">
+      <button class="btn-view-more" id="viewMoreBtn">
+        <span id="viewMoreText">View All Members</span>
+        <i class="fas fa-chevron-down" id="viewMoreIcon"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">Get In Touch</span>
+      <h2>Contact <span class="gold-text">Us</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right" data-aos-duration="900">
+        <h3>Join the <span class="gold-text">Association</span></h3>
+        <p>Become part of Nigeria's growing rural farming movement. Whether you're a crop farmer, livestock keeper, or agribusiness investor — there's a place for you at IRFA.</p>
+        <div class="contact-details">
+          <div class="contact-item" data-aos="fade-right" data-aos-delay="100"><div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div><span>Iwajowa Local Government Area, Oyo State, Nigeria</span></div>
+          <div class="contact-item" data-aos="fade-right" data-aos-delay="200"><div class="ci-icon"><i class="fas fa-phone"></i></div><span>+234 800 000 0000</span></div>
+          <div class="contact-item" data-aos="fade-right" data-aos-delay="300"><div class="ci-icon"><i class="fas fa-envelope"></i></div><span>info@irfa.ng</span></div>
+        </div>
+        <div class="contact-social" data-aos="fade-up" data-aos-delay="400">
+          <a href="https://facebook.com" target="_blank" class="social-btn fb"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+          <a href="https://instagram.com" target="_blank" class="social-btn ig"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+          <a href="https://tiktok.com" target="_blank" class="social-btn tt"><i class="fab fa-tiktok"></i><span>TikTok</span></a>
+        </div>
+      </div>
+      <div class="contact-form" data-aos="fade-left" data-aos-duration="900">
+        <div class="form-header"><h4>Send a Message</h4><p>We respond within 24 hours</p></div>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your full name" required/></div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+234 xxx xxx xxxx"/></div>
+          </div>
+          <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com"/></div>
+          <div class="form-group">
+            <label>I am a...</label>
+            <select><option>Crop Farmer</option><option>Livestock Farmer</option><option>Fish Farmer</option><option>Agribusiness Investor</option><option>Youth / Student</option><option>Other</option></select>
+          </div>
+          <div class="form-group"><label>Message</label><textarea placeholder="Tell us about yourself or your inquiry..." rows="4"></textarea></div>
+          <button type="submit" class="btn btn-gold full-width">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <i class="fas fa-check-circle"></i><h4>Message Sent!</h4><p>Thank you! We'll be in touch shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand" data-aos="fade-right">
+      <img src="logo.jpeg" alt="IRFA Logo" class="footer-logo"/>
+      <div>
+        <h3>Iwajowa Rural Farmers Association</h3>
+        <em>Motto: Trust &amp; Integrity</em>
+        <p>Empowering Nigeria's rural farming communities through unity, sustainable agriculture, and shared prosperity.</p>
+      </div>
+    </div>
+    <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+        <li><a href="#mission"><i class="fas fa-chevron-right"></i> Vision &amp; Mission</a></li>
+        <li><a href="#commodities"><i class="fas fa-chevron-right"></i> Commodities</a></li>
+        <li><a href="#team"><i class="fas fa-chevron-right"></i> Team</a></li>
+        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links" data-aos="fade-up" data-aos-delay="200">
+      <h4>Our Commodities</h4>
+      <ul>
+        <li><a href="#commodities"><i class="fas fa-chevron-right"></i> Poultry &amp; Livestock</a></li>
+        <li><a href="#commodities"><i class="fas fa-chevron-right"></i> Fish Farming</a></li>
+        <li><a href="#commodities"><i class="fas fa-chevron-right"></i> Cassava &amp; Yam</a></li>
+        <li><a href="#commodities"><i class="fas fa-chevron-right"></i> Rice &amp; Maize</a></li>
+        <li><a href="#commodities"><i class="fas fa-chevron-right"></i> Fruits &amp; Vegetables</a></li>
+        <li><a href="#commodities"><i class="fas fa-chevron-right"></i> Oil Palm &amp; Cocoa</a></li>
+      </ul>
+    </div>
+    <div class="footer-social-section" data-aos="fade-left" data-aos-delay="300">
+      <h4>Follow Us</h4>
+      <p>Stay updated with farming tips, news, and association events.</p>
+      <div class="footer-socials">
+        <a href="https://facebook.com" target="_blank" class="footer-social-link fb-link">
+          <i class="fab fa-facebook-f"></i><div><strong>Facebook</strong><span>@IwajowaFarmers</span></div>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="footer-social-link ig-link">
+          <i class="fab fa-instagram"></i><div><strong>Instagram</strong><span>@IwajowaFarmers</span></div>
+        </a>
+        <a href="https://tiktok.com" target="_blank" class="footer-social-link tt-link">
+          <i class="fab fa-tiktok"></i><div><strong>TikTok</strong><span>@IwajowaFarmers</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Iwajowa Rural Farmers Association. All rights reserved.</p>
+    <p>Made with <span class="gold-text">❤</span> for Nigerian Farmers</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
