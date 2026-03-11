@@ -139,3 +139,86 @@ document.querySelectorAll('.team-card').forEach(card => {
   });
   card.addEventListener('mouseleave', () => { card.style.transform = ''; });
 });
+
+/* ===== COMMODITY EXPERT MODAL ===== */
+(function () {
+  const overlay    = document.getElementById('cmOverlay');
+  const closeBtn   = document.getElementById('cmClose');
+  const bannerImg  = document.getElementById('cmBannerImg');
+  const catTag     = document.getElementById('cmCatTag');
+  const commName   = document.getElementById('cmCommodityName');
+  const numBadge   = document.getElementById('cmNumBadge');
+  const expertImg  = document.getElementById('cmExpertImg');
+  const initials   = document.getElementById('cmExpertInitials');
+  const nameEl     = document.getElementById('cmName');
+  const roleEl     = document.getElementById('cmRole');
+  const expBadge   = document.getElementById('cmExpBadge');
+  const bioEl      = document.getElementById('cmBio');
+  const highlights = document.getElementById('cmHighlights');
+  const ctaBtn     = document.getElementById('cmCtaBtn');
+
+  function openModal(card) {
+    const d = card.dataset;
+    const isCrop = d.category === 'crop';
+
+    // Banner
+    bannerImg.style.backgroundImage = `url('${d.img}')`;
+    catTag.textContent  = isCrop ? '🌿 Crop Farming' : '🐄 Livestock';
+    catTag.style.background = isCrop ? '#2d6040' : 'var(--gold)';
+    catTag.style.color      = isCrop ? '#fff'   : 'var(--navy-dark)';
+    commName.textContent    = d.name;
+    numBadge.textContent    = `#${d.num}`;
+
+    // Expert photo — try real photo, fallback to initials
+    const colors = (d.color || '').split(',');
+    initials.style.background = `linear-gradient(135deg, ${colors[0] || '#1a1f5e'}, ${colors[1] || '#3a42b0'})`;
+    initials.textContent = d.initials || '?';
+    initials.style.display = 'none';
+
+    expertImg.style.display = 'block';
+    expertImg.src = d.expertPhoto || '';
+    expertImg.alt = d.expert || '';
+
+    // Identity
+    nameEl.textContent    = d.expert   || 'IRFA Specialist';
+    roleEl.innerHTML      = d.role     || 'IRFA Member';
+    expBadge.textContent  = d.experience || 'Experienced Specialist';
+
+    // Bio
+    bioEl.innerHTML = d.bio || '';
+
+    // Highlights
+    highlights.innerHTML = '';
+    [d.h1, d.h2, d.h3].filter(Boolean).forEach(h => {
+      const el = document.createElement('div');
+      el.className = 'cm-highlight-item';
+      el.innerHTML = `<i class="fas fa-check-circle"></i><span>${h}</span>`;
+      highlights.appendChild(el);
+    });
+
+    // CTA
+    ctaBtn.href = '#contact';
+    ctaBtn.onclick = () => closeModal();
+
+    // Open
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Bind every commodity card
+  document.querySelectorAll('.c-card').forEach(card => {
+    card.addEventListener('click', () => openModal(card));
+  });
+
+  // Close on button / backdrop
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+
+  // Close on Escape key
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+})();
