@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.iwajowaruralfarmersassociation.com.ng//sitemap.xml
