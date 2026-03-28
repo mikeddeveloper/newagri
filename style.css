@@ -62,10 +62,10 @@ ul{list-style:none}
 .particle{position:absolute;border-radius:50%;background:var(--gold-light);opacity:.08;animation:float linear infinite}
 @keyframes float{0%{transform:translateY(100vh) scale(0);opacity:0}10%{opacity:.1}90%{opacity:.1}100%{transform:translateY(-120px) scale(1);opacity:0}}
 .hero-content{position:relative;z-index:2;padding:40px 20px;max-width:800px;margin:0 auto}
-.hero-badge{position:relative;display:inline-block;margin-bottom:24px}
-.hero-logo{width:128px;height:128px;border-radius:50%;border:4px solid var(--gold-light);object-fit:cover;position:relative;z-index:2;box-shadow:0 0 50px rgba(240,180,41,.4)}
+.hero-badge{position:relative;display:inline-block;margin-bottom:40px}
+.hero-logo{width:220px;height:220px;border-radius:50%;border:5px solid var(--gold-light);object-fit:cover;position:relative;z-index:2;box-shadow:0 0 80px rgba(240,180,41,.6),0 0 120px rgba(240,180,41,.2)}
 .hero-badge-ring{position:absolute;border-radius:50%;border:2px solid rgba(240,180,41,.3);animation:ringPulse 2.5s ease-in-out infinite}
-.r1{inset:-14px;animation-delay:0s} .r2{inset:-28px;animation-delay:.6s}
+.r1{inset:-20px;animation-delay:0s} .r2{inset:-38px;animation-delay:.6s}
 @keyframes ringPulse{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.15;transform:scale(1.05)}}
 .hero-tagline{color:var(--gold-light);font-size:.88rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;justify-content:center;gap:14px;font-weight:300}
 .tline{display:block;width:40px;height:1px;background:var(--gold-light);opacity:.5}
