@@ -8,6 +8,23 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;700&family=Cinzel:wght@600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- HERO MOTTO STYLE (inline so it overrides correctly) -->
+  <style>
+    .hero-motto {
+      color: rgba(255,255,255,0.82);
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+      margin-top: -6px;
+      font-family: 'DM Sans', sans-serif;
+    }
+    @media(max-width:640px){
+      .hero-motto { font-size: 0.74rem; letter-spacing: 1.8px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -23,13 +40,8 @@
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
-    <div class="nav-logo">
-      <img src="logo.jpeg" alt="IRFA Logo" class="logo-img"/>
-      <div class="logo-text">
-        <span class="logo-main">IRFA</span>
-        <span class="logo-sub">Iwajowa Rural Farmers Association</span>
-      </div>
-    </div>
+
+    <!-- DESKTOP: centred links + right CTA -->
     <ul class="nav-links" id="navLinks">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -37,12 +49,15 @@
       <li><a href="#commodities">Commodities</a></li>
       <li><a href="#objectives">Objectives</a></li>
       <li><a href="#team">Team</a></li>
-      <li><a href="#settlement">Farm Settlements</a></li>
-      <li><a href="#contact" class="nav-cta">Join Us</a></li>
+      <li><a href="#settlement">Settlements</a></li>
+      <li><a href="#contact" class="nav-cta-link">Join Us</a></li>
     </ul>
+
+    <!-- MOBILE: hamburger only -->
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
+
   </div>
 </nav>
 
@@ -57,24 +72,15 @@
       <div class="hero-badge-ring r1"></div>
       <div class="hero-badge-ring r2"></div>
     </div>
-    <p class="hero-tagline" data-aos="fade-up" data-aos-delay="300">
-      <span class="tline"></span> Motto: <em>Trust &amp; Integrity</em> <span class="tline"></span>
-    </p>
-    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="500">
+    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300">
       <span class="gold-text">Iwajowa Rural<br/>Farmers Association</span>
     </h1>
-    <p class="hero-desc" data-aos="fade-up" data-aos-delay="700">
+    <p class="hero-motto" data-aos="fade-up" data-aos-delay="450">
+      Motto: Trust &amp; Integrity
+    </p>
+    <p class="hero-desc" data-aos="fade-up" data-aos-delay="600">
       Empowering Nigerian rural farmers through sustainable agriculture, collective action, and shared economic resilience using the Farm Settlement System.
     </p>
-    <div class="hero-btns" data-aos="fade-up" data-aos-delay="900">
-      <a href="#commodities" class="btn btn-glass"><i class="fas fa-store"></i> Our 38 Commodities</a>
-    </div>
-    <div class="hero-pills" data-aos="fade-up" data-aos-delay="1100">
-      <span>🌾 23 Crop Products</span>
-      <span>🐄 15 Livestock Products</span>
-      <span>🐟 Fisheries</span>
-      <span>🚜 Agri-Tech</span>
-    </div>
   </div>
   <div class="hero-scroll-hint">
     <div class="scroll-mouse"><div class="scroll-dot"></div></div>
@@ -129,7 +135,6 @@
           <span class="tag">🐄 Livestock</span>
           <span class="tag">🏡 Green House</span>
           <span class="tag">🚜 Mechanization</span>
-          
         </div>
       </div>
       <div class="about-visual" data-aos="fade-left" data-aos-duration="900">
@@ -203,9 +208,7 @@
   </div>
 </section>
 
-<!-- ============================================================
-     COMMODITIES
-============================================================ -->
+<!-- COMMODITIES -->
 <section class="commodities section" id="commodities">
   <div class="commodities-bg"></div>
   <div class="container">
@@ -235,13 +238,13 @@
       <!-- 1 Poultry -->
       <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="0"
         data-num="01" data-name="Poultry Farming"
-        data-img="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=900&q=85&auto=format&fit=crop"
+        data-img="team-photos/poultry (2).jpeg"
         data-expert="Ganiyu Abiodun" data-role="Pepper State Chairman, IRFA"
         data-expert-photo="team-photos/poultry.jpeg" data-initials="IO" data-color="#1a5e5e,#20a0a0"
         data-experience="12 Years Experience"
         data-bio="Ganiyu Abiodun leads all poultry operations within IRFA's livestock division, overseeing broiler and layer production across member farms in Iwajowa LGA. He has helped more than 80 IRFA members establish profitable poultry units with best-practice biosecurity and feed management."
         data-h1="Broiler &amp; Layer Production" data-h2="Disease Prevention &amp; Biosecurity" data-h3="Feed Formulation &amp; Cost Reduction">
-        <div class="c-img"><img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=420&q=75&auto=format&fit=crop" alt="Poultry" loading="lazy"/><span class="c-num">01</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-img"><img src="team-photos/poultry (2).jpeg" alt="Poultry" loading="lazy"/><span class="c-num">01</span><span class="c-tag lt">Livestock</span></div>
         <div class="c-body"><i class="fas fa-drumstick-bite"></i><h4>Poultry Farming</h4></div>
         <div class="c-click-hint"><i class="fas fa-hand-pointer"></i> Click to meet the expert</div>
       </div>
@@ -249,13 +252,13 @@
       <!-- 2 Fish -->
       <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="40"
         data-num="02" data-name="Fish Farming"
-        data-img="https://media.istockphoto.com/id/1321386806/photo/african-seafood-at-market-lagos-nigeria.webp?a=1&b=1&s=612x612&w=0&k=20&c=M-dfZ0Hy2S_PU8-ndYJGjtL5nm7y34_0VWCf6t0WKCU="
+        data-img="team-photos/catfish.jpeg"
         data-expert="Mrs. Abiodun Afolabi" data-role="Fish State Chairman, IRFA"
         data-expert-photo="team-photos/fish.jpeg" data-initials="AA" data-color="#5e3a1a,#a06030"
         data-experience="9 Years Experience"
         data-bio="Mrs. Abiodun Afolabi coordinates catfish and tilapia aquaculture across IRFA, establishing direct supply chains between fish farmers and major markets in Ogun State. Her pond management training has helped members double average fish yields within a single season."
         data-h1="Catfish &amp; Tilapia Pond Management" data-h2="Market Linkage &amp; Pricing Strategy" data-h3="Water Quality &amp; Health Management">
-        <div class="c-img"><img src="https://media.istockphoto.com/id/1321386806/photo/african-seafood-at-market-lagos-nigeria.webp?a=1&b=1&s=612x612&w=0&k=20&c=M-dfZ0Hy2S_PU8-ndYJGjtL5nm7y34_0VWCf6t0WKCU=" alt="Fish" loading="lazy"/><span class="c-num">02</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-img"><img src="team-photos/catfish.jpeg" alt="Fish" loading="lazy"/><span class="c-num">02</span><span class="c-tag lt">Livestock</span></div>
         <div class="c-body"><i class="fas fa-fish"></i><h4>Fish Farming</h4></div>
         <div class="c-click-hint"><i class="fas fa-hand-pointer"></i> Click to meet the expert</div>
       </div>
@@ -263,13 +266,13 @@
       <!-- 3 Crab/Crayfish -->
       <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="80"
         data-num="03" data-name="Crab / Crayfish Farming"
-        data-img="https://images.unsplash.com/photo-1523920534457-577c7003a93d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNyYXlmaXNofGVufDB8fDB8fHww"
+        data-img="team-photos/catfish (2).jpeg"
         data-expert="" data-role="Market Access Director, IRFA"
         data-expert-photo="team-photos/08-market.jpg" data-initials="AA" data-color="#5e3a1a,#a06030"
         data-experience="9 Years Experience"
         data-bio="Mrs. Abiodun Afolabi manages IRFA's crab and crayfish aquaculture programme, supplying high-end restaurants and seafood markets. She has pioneered export awareness among members, exploring international demand for premium Nigerian aquatic species and smoked crayfish."
         data-h1="Crab &amp; Crayfish Cultivation" data-h2="Smoked Crayfish Processing" data-h3="Restaurant &amp; Export Market Access">
-        <div class="c-img"><img src="https://images.unsplash.com/photo-1523920534457-577c7003a93d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNyYXlmaXNofGVufDB8fDB8fHww" alt="Crab" loading="lazy"/><span class="c-num">03</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-img"><img src="team-photos/catfish (2).jpeg" alt="Crab" loading="lazy"/><span class="c-num">03</span><span class="c-tag lt">Livestock</span></div>
         <div class="c-body"><i class="fas fa-fish"></i><h4>Crab / Crayfish Farming</h4></div>
         <div class="c-click-hint"><i class="fas fa-hand-pointer"></i> Click to meet the expert</div>
       </div>
@@ -277,13 +280,13 @@
       <!-- 4 Sheep & Goat -->
       <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="120"
         data-num="04" data-name="Sheep &amp; Goat Farming"
-        data-img="https://images.unsplash.com/photo-1524024973431-2ad916746881?w=900&q=85&auto=format&fit=crop"
+        data-img="team-photos/sheepgoat.jpeg"
         data-expert="Mr. Ismail Oladele" data-role="Livestock Specialist, IRFA"
         data-expert-photo="team-photos/09-livestock.jpg" data-initials="IO" data-color="#1a5e5e,#20a0a0"
         data-experience="12 Years Experience"
         data-bio="Mr. Ismail Oladele manages IRFA's small-ruminant programme, guiding members through housing, nutrition, and selective breeding for both sheep and goats. His structured system has reduced mortality rates by over 40% and significantly increased festive-season income for member farmers."
         data-h1="Herd Management &amp; Housing" data-h2="Selective Breeding Techniques" data-h3="Festive Season Marketing">
-        <div class="c-img"><img src="https://images.unsplash.com/photo-1524024973431-2ad916746881?w=420&q=75&auto=format&fit=crop" alt="Sheep Goat" loading="lazy"/><span class="c-num">04</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-img"><img src="team-photos/sheepgoat.jpeg" alt="Sheep Goat" loading="lazy"/><span class="c-num">04</span><span class="c-tag lt">Livestock</span></div>
         <div class="c-body"><i class="fas fa-horse-head"></i><h4>Sheep &amp; Goat Farming</h4></div>
         <div class="c-click-hint"><i class="fas fa-hand-pointer"></i> Click to meet the expert</div>
       </div>
@@ -291,13 +294,13 @@
       <!-- 5 Dog -->
       <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="160"
         data-num="05" data-name="Dog Farming"
-        data-img="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=900&q=85&auto=format&fit=crop"
+        data-img="team-photos/dog.jpeg"
         data-expert="Mr. Sunday Adeyemi" data-role="Community Liaison Officer, IRFA"
         data-expert-photo="team-photos/11-liaison.jpg" data-initials="SA" data-color="#3a4a1a,#708030"
         data-experience="8 Years Experience"
         data-bio="Mr. Sunday Adeyemi coordinates IRFA's dog breeding programme, focusing on local breeds for security, companionship, and the traditional meat market. He works with communities to promote responsible, humane rearing standards and connects breeders with buyers across the region."
         data-h1="Local &amp; Improved Breed Rearing" data-h2="Humane Standards &amp; Welfare" data-h3="Community &amp; Market Placement">
-        <div class="c-img"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=420&q=75&auto=format&fit=crop" alt="Dog" loading="lazy"/><span class="c-num">05</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-img"><img src="team-photos/dog.jpeg" alt="Dog" loading="lazy"/><span class="c-num">05</span><span class="c-tag lt">Livestock</span></div>
         <div class="c-body"><i class="fas fa-paw"></i><h4>Dog Farming</h4></div>
         <div class="c-click-hint"><i class="fas fa-hand-pointer"></i> Click to meet the expert</div>
       </div>
@@ -305,13 +308,13 @@
       <!-- 6 Cattle -->
       <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="200"
         data-num="06" data-name="Cattle Farming"
-        data-img="https://images.unsplash.com/photo-1657536011984-a69067064742?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0dGxlJTIwZmFybWluZ3xlbnwwfHwwfHx8MA%3D%3D"
+        data-img="team-photos/cattle.jpeg"
         data-expert="Oyedeji Olorunsola Abdulahi" data-role="Cattle State Chairman, IRFA"
         data-expert-photo="team-photos/cattledog.jpeg" data-initials="BL" data-color="#1a3a5e,#2a6090"
         data-experience="15 Years Experience"
         data-bio="Oyedeji Olorunsola Abdulahi, IRFA's Agricultural Director, oversees cattle rearing with a focus on rotational grazing and beef value-addition including processing. He has helped member ranchers access regional markets and improve average live weights through improved feed and veterinary care."
         data-h1="Rotational Grazing Systems" data-h2="Beef Processing &amp; Value Addition" data-h3="Veterinary &amp; Health Protocols">
-        <div class="c-img"><img src="https://images.unsplash.com/photo-1657536011984-a69067064742?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0dGxlJTIwZmFybWluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Cattle" loading="lazy"/><span class="c-num">06</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-img"><img src="team-photos/cattle.jpeg" alt="Cattle" loading="lazy"/><span class="c-num">06</span><span class="c-tag lt">Livestock</span></div>
         <div class="c-body"><i class="fas fa-cow"></i><h4>Cattle Farming</h4></div>
         <div class="c-click-hint"><i class="fas fa-hand-pointer"></i> Click to meet the Chairman</div>
       </div>
@@ -319,13 +322,13 @@
       <!-- 7 Dairy -->
       <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="240"
         data-num="07" data-name="Dairy Farming"
-        data-img="https://images.unsplash.com/photo-1771962152057-4c3015841488?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRhaXJ5JTIwZmFybWluZ3xlbnwwfHwwfHx8MA%3D%3D"
+        data-img="team-photos/dairy.jpeg"
         data-expert="Mrs. Grace Taiwo" data-role="Treasurer, IRFA"
         data-expert-photo="team-photos/04-treasurer.jpg" data-initials="GT" data-color="#8b4a10,#d47020"
         data-experience="10 Years Experience"
         data-bio="Mrs. Grace Taiwo champions IRFA's dairy initiative, introducing cooperative milk collection and processing. Members now produce yoghurt and local cheese for Ogun State markets, boosting incomes by up to 60%. She manages the finances of the dairy cooperative with full transparency."
         data-h1="Milk Collection &amp; Processing" data-h2="Yoghurt &amp; Cheese Production" data-h3="Dairy Cooperative Management">
-        <div class="c-img"><img src="https://images.unsplash.com/photo-1771962152057-4c3015841488?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRhaXJ5JTIwZmFybWluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Dairy" loading="lazy"/><span class="c-num">07</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-img"><img src="team-photos/dairy.jpeg" alt="Dairy" loading="lazy"/><span class="c-num">07</span><span class="c-tag lt">Livestock</span></div>
         <div class="c-body"><i class="fas fa-cheese"></i><h4>Dairy Farming</h4></div>
         <div class="c-click-hint"><i class="fas fa-hand-pointer"></i> Click to meet the expert</div>
       </div>
@@ -333,13 +336,13 @@
       <!-- 8 Pig -->
       <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="280"
         data-num="08" data-name="Pig Farming"
-        data-img="https://images.unsplash.com/photo-1655307553995-5bf1f15dbccc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGlnJTIwZmFybWluZ3xlbnwwfHwwfHx8MA%3D%3D"
+        data-img="team-photos/pig.jpeg"
         data-expert="Mr. Ismail Oladele" data-role="Livestock Specialist, IRFA"
         data-expert-photo="team-photos/09-livestock.jpg" data-initials="IO" data-color="#1a5e5e,#20a0a0"
         data-experience="12 Years Experience"
         data-bio="Mr. Ismail Oladele leads pig farming development, training members in deep-litter housing and balanced feeding. He has established a pork processing cooperative that supplies hotels and restaurants across Ogun State, significantly raising member incomes year-round."
         data-h1="Deep-Litter Housing Systems" data-h2="Pork Processing &amp; Sales" data-h3="Feed &amp; Weight Gain Optimisation">
-        <div class="c-img"><img src="https://images.unsplash.com/photo-1655307553995-5bf1f15dbccc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGlnJTIwZmFybWluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Pig" loading="lazy"/><span class="c-num">08</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-img"><img src="team-photos/pig.jpeg" alt="Pig" loading="lazy"/><span class="c-num">08</span><span class="c-tag lt">Livestock</span></div>
         <div class="c-body"><i class="fas fa-piggy-bank"></i><h4>Pig Farming</h4></div>
         <div class="c-click-hint"><i class="fas fa-hand-pointer"></i> Click to meet the Chairman</div>
       </div>
@@ -347,13 +350,13 @@
       <!-- 9 Snail -->
       <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="320"
         data-num="09" data-name="Snail Farming"
-        data-img="https://media.istockphoto.com/id/500060484/photo/bucket-of-snails.webp?a=1&b=1&s=612x612&w=0&k=20&c=zvXK4RAX7_sFO4s_vNHszD3gCz0T-XT9PxyXD5tdLCc="
+        data-img="team-photos/snail (2).jpeg"
         data-expert="Miss Remi Yusuf" data-role="Training &amp; Development Lead, IRFA"
         data-expert-photo="team-photos/10-training.jpg" data-initials="RY" data-color="#5e1a1a,#a03030"
         data-experience="7 Years Experience"
         data-bio="Miss Remi Yusuf introduced snail farming (heliculture) as a low-cost, high-yield entry point for young and women farmers within IRFA. She runs bi-annual workshops and has helped over 50 youth members establish thriving snail farms with minimal startup capital."
         data-h1="Heliculture &amp; Housing Design" data-h2="Youth &amp; Women Empowerment" data-h3="Snail Market Linkages">
-        <div class="c-img"><img src="https://media.istockphoto.com/id/500060484/photo/bucket-of-snails.webp?a=1&b=1&s=612x612&w=0&k=20&c=zvXK4RAX7_sFO4s_vNHszD3gCz0T-XT9PxyXD5tdLCc=" alt="Snail" loading="lazy"/><span class="c-num">09</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-img"><img src="team-photos/snail (2).jpeg" alt="Snail" loading="lazy"/><span class="c-num">09</span><span class="c-tag lt">Livestock</span></div>
         <div class="c-body"><i class="fas fa-circle"></i><h4>Snail Farming</h4></div>
         <div class="c-click-hint"><i class="fas fa-hand-pointer"></i> Click to meet the expert</div>
       </div>
@@ -361,13 +364,13 @@
       <!-- 10 Grasscutter -->
       <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="360"
         data-num="10" data-name="Grasscutter Farming"
-        data-img="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=900&q=85&auto=format&fit=crop"
+        data-img="team-photos/grasscutter.jpeg"
         data-expert="Miss Remi Yusuf" data-role="Training &amp; Development Lead, IRFA"
         data-expert-photo="team-photos/10-training.jpg" data-initials="RY" data-color="#5e1a1a,#a03030"
         data-experience="7 Years Experience"
         data-bio="Miss Remi Yusuf champions grasscutter (greater cane rat) farming as a high-demand bush meat alternative. Her curriculum covers cage construction, local-grass feed formulation, and marketing, equipping dozens of IRFA members to earn from this fast-growing speciality sector."
         data-h1="Cage Construction &amp; Rearing" data-h2="Local Feed Formulation" data-h3="Bush Meat Market Strategy">
-        <div class="c-img"><img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=420&q=75&auto=format&fit=crop" alt="Grasscutter" loading="lazy"/><span class="c-num">10</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-img"><img src="team-photos/grasscutter.jpeg" alt="Grasscutter" loading="lazy"/><span class="c-num">10</span><span class="c-tag lt">Livestock</span></div>
         <div class="c-body"><i class="fas fa-paw"></i><h4>Grasscutter Farming</h4></div>
         <div class="c-click-hint"><i class="fas fa-hand-pointer"></i> Click to meet the expert</div>
       </div>
@@ -375,13 +378,13 @@
       <!-- 11 Rabbit -->
       <div class="c-card" data-category="livestock" data-aos="fade-up" data-aos-delay="400"
         data-num="11" data-name="Rabbit Farming"
-        data-img="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=900&q=85&auto=format&fit=crop"
+        data-img="team-photos/rabbit (2).jpeg"
         data-expert="Idris Mubarak Olajide" data-role="Youth &amp; Rabbit State Chairman, IRFA"
         data-expert-photo="team-photos/rabbit.jpeg" data-initials="KA" data-color="#4a1a5e,#7030a0"
         data-experience="6 Years Experience"
         data-bio="Idris Mubarak Olajide promotes rabbit farming as an accessible, fast-turnover enterprise ideal for women and youth. His IRFA starter kit programme provides breeding stock, housing plans, and feed guides, lowering the barrier to entry for new farmers across the community."
         data-h1="Rabbit Housing &amp; Breeding" data-h2="Starter Kit Programme" data-h3="Meat &amp; Fur Market Access">
-        <div class="c-img"><img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=420&q=75&auto=format&fit=crop" alt="Rabbit" loading="lazy"/><span class="c-num">11</span><span class="c-tag lt">Livestock</span></div>
+        <div class="c-img"><img src="team-photos/rabbit (2).jpeg" alt="Rabbit" loading="lazy"/><span class="c-num">11</span><span class="c-tag lt">Livestock</span></div>
         <div class="c-body"><i class="fas fa-paw"></i><h4>Rabbit Farming</h4></div>
         <div class="c-click-hint"><i class="fas fa-hand-pointer"></i> Click to meet the Chairman</div>
       </div>
@@ -695,7 +698,7 @@
       <div class="c-card crop-card" data-category="crop" data-aos="fade-up" data-aos-delay="680"
         data-num="33" data-name="Potato Farming"
         data-img="https://images.unsplash.com/photo-1663168883715-8e441675d216?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBvdGF0byUyMGZhcm1pbmd8ZW58MHx8MHx8fDA%3D"
-        data-expert="Adeife-israel Nelson " data-role="Training &amp; Potato State Chairman, IRFA"
+        data-expert="Adeife-israel Nelson" data-role="Training &amp; Potato State Chairman, IRFA"
         data-expert-photo="team-photos/pot.jpeg" data-initials="RY" data-color="#5e1a1a,#a03030"
         data-experience="7 Years Experience"
         data-bio="Miss Remi Yusuf promotes both sweet and Irish potato cultivation as climate-resilient crops with strong market demand. She trains members in orange-fleshed sweet potato varieties high in Vitamin A, and has introduced potato flour production as a wheat-flour substitute for local bakers and food producers."
@@ -965,9 +968,9 @@
         <h3>Join the <span class="gold-text">Association</span></h3>
         <p>Become part of Nigeria's growing rural farming movement. Whether you're a crop farmer, livestock keeper, or agribusiness investor — there's a place for you at IRFA.</p>
         <div class="contact-details">
-          <div class="contact-item" data-aos="fade-right" data-aos-delay="100"><div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div><span>Iwajowa Local Government Area, Ogun State, Nigeria</span></div>
+          <div class="contact-item" data-aos="fade-right" data-aos-delay="100"><div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div><span>3, Lantoro Road, Abeokuta, Ogun State</span></div>
           <div class="contact-item" data-aos="fade-right" data-aos-delay="200"><div class="ci-icon"><i class="fas fa-phone"></i></div><span>07062679299 &nbsp;|&nbsp; 08076516769</span></div>
-          <div class="contact-item" data-aos="fade-right" data-aos-delay="300"><div class="ci-icon"><i class="fas fa-envelope"></i></div><span>irfa.contact@gmail.com</span></div>
+          <div class="contact-item" data-aos="fade-right" data-aos-delay="300"><div class="ci-icon"><i class="fas fa-envelope"></i></div><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="adc4dfcbcc83cec2c3d9ccced9edcac0ccc4c183cec2c0">[email&#160;protected]</a></span></div>
         </div>
         <div class="contact-social" data-aos="fade-up" data-aos-delay="400">
           <a href="https://facebook.com" target="_blank" class="social-btn fb"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
@@ -1054,9 +1057,7 @@
   </div>
 </footer>
 
-<!-- ============================================================
-     COMMODITY EXPERT MODAL
-============================================================ -->
+<!-- COMMODITY EXPERT MODAL -->
 <div class="cm-overlay" id="cmOverlay" role="dialog" aria-modal="true" aria-labelledby="cmName">
   <div class="cm-modal" id="cmModal">
     <button class="cm-close" id="cmClose" aria-label="Close"><i class="fas fa-times"></i></button>
@@ -1089,7 +1090,7 @@
         </div>
       </div>
       <div class="cm-footer-strip">
-        <div class="cm-footer-item"><i class="fas fa-map-marker-alt"></i><span>Iwajowa LGA, Ogun State</span></div>
+        <div class="cm-footer-item"><i class="fas fa-map-marker-alt"></i><span>3, Lantoro Road, Abeokuta, Ogun State</span></div>
         <div class="cm-footer-item"><i class="fas fa-users"></i><span>IRFA Certified Specialist</span></div>
         <div class="cm-footer-item"><i class="fas fa-phone"></i><span>07062679299 | 08076516769</span></div>
         <a href="#contact" class="cm-cta-btn" id="cmCtaBtn"><i class="fas fa-envelope"></i> Contact This Expert</a>
@@ -1098,7 +1099,211 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
+<script>
+/* ── Hamburger toggle patch ── */
+(function() {
+  var btn = document.getElementById('hamburger');
+  var menu = document.getElementById('navLinks');
+  if (!btn || !menu) return;
+
+  btn.addEventListener('click', function() {
+    var isOpen = menu.classList.toggle('open');
+    btn.classList.toggle('open', isOpen);
+    btn.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  /* Close when a link is tapped */
+  menu.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      menu.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+
+  /* Close on resize back to desktop */
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+      menu.classList.remove('open');
+      btn.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+})();
+</script>
+
+
+<!-- NAVBAR STYLES -->
+<style>
+/* ── OVERRIDE original nav-inner from style.css ── */
+.nav-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+/* ── DESKTOP NAV LINKS ── */
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+}
+
+.nav-links li { display: flex; }
+
+.nav-links a {
+  color: rgba(255,255,255,.78);
+  font-size: .74rem;
+  font-weight: 600;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border-radius: 8px;
+  position: relative;
+  transition: color .25s, background .25s;
+  white-space: nowrap;
+  display: block;
+}
+
+.nav-links a:hover {
+  color: var(--gold-light);
+  background: rgba(240,180,41,.1);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--gold-light);
+  border-radius: 2px;
+  transition: width .3s;
+}
+.nav-links a:hover::after { width: 55%; }
+
+/* ── JOIN US — styled as pill, last item ── */
+.nav-cta-link {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light)) !important;
+  color: var(--navy-dark) !important;
+  padding: 8px 20px !important;
+  border-radius: 50px !important;
+  font-weight: 800 !important;
+  margin-left: 8px;
+  box-shadow: 0 4px 14px rgba(200,147,10,.4);
+  transition: transform .3s, box-shadow .3s !important;
+}
+.nav-cta-link:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 22px rgba(200,147,10,.55) !important;
+  background: rgba(240,180,41,.1) !important;
+}
+.nav-cta-link::after { display: none !important; }
+
+/* ── HAMBURGER — hidden on desktop ── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 6px;
+  z-index: 1001;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--gold-light);
+  border-radius: 2px;
+  transition: all .35s;
+}
+/* Animated X state */
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── TABLET: tighter spacing ── */
+@media (max-width: 1024px) {
+  .nav-links a { font-size: .68rem; padding: 7px 9px; }
+  .nav-cta-link { padding: 7px 16px !important; }
+}
+
+/* ── MOBILE: hamburger drawer ── */
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    position: fixed;
+    inset: 0;
+    background: rgba(6, 9, 40, .97);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    padding: 90px 32px 48px;
+    gap: 0;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .nav-links.open { display: flex; }
+
+  .nav-links li { width: 100%; }
+
+  .nav-links a {
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    padding: 16px 0;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+    color: rgba(255,255,255,.85);
+    width: 100%;
+  }
+  .nav-links a:hover {
+    color: var(--gold-light);
+    background: transparent;
+    padding-left: 8px;
+  }
+  .nav-links a::after { display: none; }
+
+  /* Join Us pill in mobile menu */
+  .nav-cta-link {
+    margin-left: 0 !important;
+    margin-top: 28px;
+    text-align: center;
+    justify-content: center;
+    padding: 14px 28px !important;
+    border-radius: 50px !important;
+    font-size: 1rem !important;
+    display: block !important;
+    border-bottom: none !important;
+  }
+  .nav-cta-link:hover { padding-left: 28px !important; }
+}
+</style>
 </body>
 </html>
